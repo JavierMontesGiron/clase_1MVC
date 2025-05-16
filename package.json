@@ -1,7 +1,7 @@
 {
-  "name": "demo-app",
+  "name": "mvc-01-2025",
   "version": "1.0.0",
-  "description": "Aplicacion MVC demo",
+  "description": "App para iunciar el modelo mvc para el curso de ingenieria de software",
   "main": "index.js",
   "scripts": {
     "build": "webpack",

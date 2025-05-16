@@ -1,8 +1,8 @@
 <?php
 
-namespace MVC;
+namespace MVC;   //tipo de archivo modelo vista controlador
 
-class Router
+class Router       //clase de nombre router
 {
     public $getRoutes = [];
     public $postRoutes = [];
@@ -10,7 +10,7 @@ class Router
 
     public function get($url, $fn)
     {
-        $this->getRoutes[$this->base . $url] = $fn;
+        $this->getRoutes[$this->base . $url] = $fn;     //
     }
 
     public function post($url, $fn)
@@ -22,7 +22,7 @@ class Router
         $this->base = $base;
     }
 
-    public function comprobarRutas()
+    public function comprobarRutas()  
     {
 
 
@@ -42,7 +42,7 @@ class Router
         } else {
             // debuguear($_SERVER);
             if( empty($_SERVER['HTTP_X_REQUESTED_WITH'])){
-                $this->render('pages/notfound');
+                $this->render('pages/notfound'); //lo que esta en la carpeta pages/notfound
             
             }else{
                 getHeadersApi();
